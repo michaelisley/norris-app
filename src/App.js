@@ -2,6 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Joke from './components/Joke';
 import CategoryButton from './components/CategoryButton';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  font-size: 3em;
+  color: burlywood;
+`;
 
 function App() {
   
@@ -68,7 +74,7 @@ function App() {
   } else {
     return (
       <div className="App">
-        <h1>Chuck Norris Jokes!</h1>
+        <Title>Chuck Norris Jokes!</Title>
         <ul>
             {
               categories.map(category => (
