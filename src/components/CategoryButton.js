@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function CategoryButton() {
+export default function CategoryButton(props) {
+    const {handleCategoryButtonClick, category} = props;
     return (
-        <div>
-            <button>Category Button</button>
-        </div>
+        <button onClick={() => handleCategoryButtonClick(category)}>{category}</button>
     )
 }
