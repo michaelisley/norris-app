@@ -19,8 +19,7 @@ export default function Joke(props) {
     } else {
         return (
             <>
-                <div className="joke">{joke}</div>
-                
+                <div data-testid="joke" className="joke">{joke}</div>
             </>
         );
     }
